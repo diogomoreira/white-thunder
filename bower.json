@@ -1,0 +1,27 @@
+{
+  "name": "white-thunder",
+  "version": "0.1.0",
+  "authors": [
+    "Diogo Moreira <diogo.dmoreira@gmail.com>"
+  ],
+  "description": "Jekyll blog template",
+  "keywords": [
+    "jekyll",
+    "blog"
+  ],
+  "license": "MIT",
+  "homepage": "diogodmoreira.com/white-thunder",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.4",
+    "jquery": "~2.1.4",
+    "fontawesome": "~4.3.0",
+    "material-design-icons": "~1.0.2"
+  }
+}
