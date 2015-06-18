@@ -1,0 +1,45 @@
+// Header
+
+.header-wrap {
+	
+	box-sizing: border-box;
+
+	-webkit-box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.4);
+	box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.4);
+
+	background-image: url("/assets/images/background.jpg");
+	background-size:cover;
+	background-position:center;
+
+	.header-layer {
+		padding: 20px 15px 20px 15px;
+		background-color: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.6);
+		color: rgba(0, 0, 0, 0.6);
+	}
+
+	.header-title {
+		font-weight: bold;
+		font-smooth: always;
+		color: #FFFFFF;
+		text-shadow: 1px 1px 5px #000;
+	}
+
+	.header-headline {
+		font-weight: normal;
+		color: #B7B7B7;
+		text-shadow: 0px 0px 3px #000;
+		font-family: Monaco,'Courier New',monospace;
+		font-size: $font-size-small;
+
+	}
+
+	.navbar-toggle {
+		.icon-bar {
+			background-color: #FFF;
+		}
+	}
+
+}
+

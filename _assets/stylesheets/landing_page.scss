@@ -1,0 +1,44 @@
+// Main page
+
+.front-wrapper {
+
+	width: 100%;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+
+	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+	box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
+	.front-wrapper-inner {
+		padding: 20px 15px 20px 15px;
+		background-color: rgba(0, 0, 0, 0.8);
+		background: rgba(0, 0, 0, 0.8);
+		color: rgba(0, 0, 0, 0.8);		
+	}
+}
+
+.main-page-article {
+	
+	text-align: center;
+
+	p {
+
+		.interest {
+			@extend .label;
+			@extend .label-primary;
+			font-weight: normal;
+		}
+	}
+}
+
+.image-landing {
+	width: 200px;
+	height: 200px;
+	background-image: url("https://avatars0.githubusercontent.com/u/808759?v=3&s=460");
+	background-size: 200px;
+	border: 3px #FFF solid;
+	-webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.9);
+	-moz-box-shadow:    4px 4px 10px 0px rgba(50, 50, 50, 0.9);
+	box-shadow:         4px 4px 10px 0px rgba(50, 50, 50, 0.9);
+	border-radius: 50%;
+}

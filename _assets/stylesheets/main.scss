@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+$font-size-base: 16px !default;
+$grid-gutter-width: 20px;
+$container-large-desktop: (960px + $grid-gutter-width) !default;
+
+@import "./components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "./components/fontawesome/scss/font-awesome";
+
+@import "header";
+@import "navigation";
+@import "article";
+@import "footer";
+@import "posts";
+@import "sections";
+
+// Personal css
+@import "landing_page";
+
+
+// General
+
+html,body {
+	height: 100%;
+}
+body {
+	background-color: #fbfbf9;
+	font-family: 'Lato', sans-serif;
+	font-weight: lighter;
+	padding-top: 50px;
+}
+
+.site-wrapper {
+	min-height: 100%;
+	height: 100%;
+}
+
+.vcenter {
+    vertical-align: middle;
+    float: none;
+}
