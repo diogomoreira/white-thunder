@@ -1,0 +1,26 @@
+<div class="post-list">
+{% for post in site.categories.blog %}
+{% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+{% if currentyear != year %}
+{% unless forloop.first %}</div></div><hr/>{% endunless %}
+<div class="row clearfix">
+<div class="col-md-2">
+<h2 class="year">{{ currentyear }}</h2>
+</div>
+<div class="col-md-10">
+{% capture year %}{{currentyear}}{% endcapture %} 
+{% endif %}
+<article>
+	<div class="row">
+		<div class="post-meta-date col-md-2">
+			<h3 class="month">{{ post.date | date: "%b %d" }}</h3>
+		</div>
+		<div class="post-meta-title col-md-10">
+			<h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<footer>Tagged {% for tags in post.tags %}<span class="tag">{{ tags }}</span> {% endfor %}</footer>
+		</div>
+	</div>
+</article>
+{% endfor %}
+</div>
+</div>
