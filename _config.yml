@@ -6,7 +6,7 @@ email: diogo.dmoreira@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Diogo Moreira's personal blog. Posts and articles about software development,
   games, photography, travels and so forth.
-baseurl: "http://diogodmoreira.com/white-thunder" # the subpath of your site, e.g. /blog/
+baseurl: "/white-thunder" # the subpath of your site, e.g. /blog/
 url: "http://diogodmoreira.com" # the base hostname & protocol for your site
 
 # User parameters
