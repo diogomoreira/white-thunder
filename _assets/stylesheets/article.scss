@@ -1,0 +1,31 @@
+// Main section
+
+.main-article {
+
+	a:hover {
+		text-decoration: none;
+		border-bottom: 1px dashed #474A83;
+	}
+
+	line-height: 1.5;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	.headline {
+		font-size: $font-size-large;
+		font-weight: lighter;
+		color: $gray-light;
+	}
+	
+	.post-text {
+		font-family: 'PT Serif', Georgia,Times, "Times New Roman", serif;
+		text-align: justify;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 800;
+	}
+
+}

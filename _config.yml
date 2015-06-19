@@ -1,0 +1,29 @@
+# Site settings
+title: White Thunder
+author: Diogo Moreira
+version: 0.1.0-beta1
+email: diogo.dmoreira@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Diogo Moreira's personal blog. Posts and articles about software development,
+  games, photography, travels and so forth.
+baseurl: "http://diogodmoreira.com/white-thunder" # the subpath of your site, e.g. /blog/
+url: "http://diogodmoreira.com" # the base hostname & protocol for your site
+
+# User parameters
+twitter_username: diogodmoreira
+github_username:  diogomoreira
+linkedin_username: diogodmoreira
+
+# Build settings
+markdown: kramdown
+exclude: [
+	"components/",
+	"node_modules/",
+	"package.json",
+	"Gruntfile.js",
+	"bower.json",
+	"LICENSE",
+	"README.md"
+]
+sass:
+    sass_dir: _assets

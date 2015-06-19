@@ -1,0 +1,11 @@
+{% assign words = content | number_of_words %}
+<header class="header-wrap">
+	<div class="header-layer post-header">
+		<div class="container">
+			<h1 class="header-title">{{ page.title }}</h1>
+			<h4 class="header-headline">{ // {{ page.headline }} }</h4>
+			<p class="post-metadata"><strong>{% if words < 360 %} 1 min {% else %} {{ words | divided_by:180 }} mins {% endif %}</strong> read. Written on {{ page.date | date: "%b %d %Y" }}</p>
+			<p class="post-metadata">{% for tags in page.tags %}<span class="label label-primary">{{ tags }}</span> {% endfor %}</p>
+		</div>
+	</div>
+</header>

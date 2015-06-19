@@ -1,0 +1,36 @@
+.sections {
+	padding-top: 35px;
+	padding-bottom: 50px;
+	box-sizing: border-box;
+
+	.section {
+		@extend .col-lg-4;
+		text-align: center;
+
+		a:hover {
+			text-decoration: none;
+			border-bottom: 1px dashed #474A83;
+		}		
+
+		.section-image {
+			width: 100%;
+			padding-top: 26.39%;
+			border: 1px solid $gray-lighter;
+			margin-bottom: 2%;
+			background-size: cover;
+			background-position: center;
+		}
+
+		#projects {
+			background-image: url("/assets/images/projects.jpg");
+		}
+
+		#subjects {
+			background-image: url("/assets/images/subjects.jpg");
+		}
+
+		#blog {
+			background-image: url("/assets/images/blog.jpg");
+		}		
+	}
+}
