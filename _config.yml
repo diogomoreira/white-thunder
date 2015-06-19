@@ -1,7 +1,7 @@
 # Site settings
 title: White Thunder
 author: Diogo Moreira
-version: 0.1.0-beta1
+version: 0.1.1-beta1
 email: diogo.dmoreira@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Diogo Moreira's personal blog. Posts and articles about software development,
