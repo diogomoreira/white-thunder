@@ -8,15 +8,23 @@
 <h2 class="year">{{ currentyear }}</h2>
 </div>
 <div class="col-md-10">
-{% capture year %}{{currentyear}}{% endcapture %} 
+{% capture year %}{{currentyear}}{% endcapture %}
 {% endif %}
-<article>
+<article class="post">
 	<div class="row">
 		<div class="post-meta-date col-md-2">
 			<h3 class="month">{{ post.date | date: "%b %d" }}</h3>
 		</div>
-		<div class="post-meta-title col-md-10">
+		<div class="post-meta-thumb col-md-3">
+			{% if post.thumb %}
+			<div class="post-thumb" style="background-image: url(&quot;{{ "/assets/images/posts/" | prepend: site.baseurl | append: post.thumb | downcase }}.jpg&quot;);)"></div>
+			{% else %}
+			<div class="post-thumb-default"></div>
+			{% endif %}
+		</div>
+		<div class="post-meta-title col-md-7">
 			<h1 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+			<article>{{ post.content | strip_html | truncatewords:35}} <a href="{{ post.url | prepend: site.baseurl }}">Read more</a></article>
 			<footer>Tagged {% for tags in post.tags %}<span class="tag">{{ tags }}</span> {% endfor %}</footer>
 		</div>
 	</div>
