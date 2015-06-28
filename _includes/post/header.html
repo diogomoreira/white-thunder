@@ -1,5 +1,5 @@
 {% assign words = content | number_of_words %}
-<header class="header-wrap">
+<header class="header-wrap" style="background-image: url(&quot;{{ "/assets/images/posts/" | prepend: site.baseurl | append: page.thumb | downcase }}.jpg&quot;);">
 	<div class="header-layer post-header">
 		<div class="container">
 			<h1 class="header-title">{{ page.title }}</h1>

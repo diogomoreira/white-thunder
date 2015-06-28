@@ -18,9 +18,6 @@
 	#navigation-menu {
 		border-radius: 0px;
 		border: 0px;
-		font-family: 'Lato', sans-serif;
-		font-weight: lighter;
-		text-transform: uppercase;
 
 		.navbar-header {
 
@@ -34,7 +31,7 @@
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	color: #000 !important;
-	
+
 	strong {
 		font-weight: 900;
 	}
@@ -71,6 +68,9 @@
     border-bottom-width: 1px;
 }
 #navigation-menu.navbar-default .navbar-nav>li>a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
     color: rgba(119, 119, 119, 1);
     background-color: rgba(248, 248, 248, 0);
 }

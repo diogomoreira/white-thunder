@@ -1,6 +1,6 @@
 .post-list {
 
-	article {
+	.post {
 		margin-bottom: 5px;
 	}
 
@@ -11,8 +11,9 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		// font-family: "PT Sans","Helvetica Neue",Arial,sans-serif;
-		font-size: $font-size-base;
+		font-size: $font-size-large;
 		font-weight: lighter;
+		margin-top: 0px;
 		margin-bottom: 0px;
 	}
 
@@ -23,8 +24,27 @@
 
 	.post-meta-title {
 
+		article {
+			font-size: $font-size-small;
+		}
+
 		.post-title {
 			font-weight: 600;
+		}
+	}
+
+	.post-meta-thumb {
+		.post-thumb {
+			width: 100%;
+			height: 100px;
+			border: 1px solid $gray-lighter;
+			background-size:cover;
+			background-position:center;
+		}
+
+		.post-thumb-default {
+			@extend .post-thumb;
+			background-image: url("../images/posts/default-post.jpg");
 		}
 	}
 
@@ -54,7 +74,7 @@
 
 	.about-text {
 		text-align: justify;
-		font-size: $font-size-small; 
+		font-size: $font-size-base;
 	}
 
 }
