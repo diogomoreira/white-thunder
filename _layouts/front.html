@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 	{% include head.html %}
-	<script src="/assets/scripts/app.main.min.js"></script>
+	<script src="{{ "/assets/scripts/app.main.js" | prepend: site.baseurl }}"></script>
 	<body>
 			{% include navigation_menu.html %}
 			<div class="container">
